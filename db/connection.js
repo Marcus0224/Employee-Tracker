@@ -1,5 +1,5 @@
 const mysql = require('mysql2');
-//require("dotenv").config();
+require("dotenv").config();
 
 //connect to database
 const db = mysql.createConnection(
@@ -8,7 +8,7 @@ const db = mysql.createConnection(
         //MySQL username
         user: 'root',
         //MYSQL password
-        password: 'Samantha27!',
+        password: process.env.PASS,
         database: 'tracker'
     },
     console.log('Connected to the Tracker database')
