@@ -1,4 +1,5 @@
 const mysql = require('mysql2');
+//require("dotenv").config();
 
 //connect to database
 const db = mysql.createConnection(
@@ -10,7 +11,7 @@ const db = mysql.createConnection(
         password: 'Samantha27!',
         database: 'tracker'
     },
-    console.log('Connected to the election database')
+    console.log('Connected to the Tracker database')
 );
 
 module.exports = db;
