@@ -8,6 +8,10 @@ const db = require("./db/connection.js");
 // display all departments
 const getAllDepts = () => {
     db.query(queries.allDepts, (err, res) => {
+        if (err) { 
+            //console.log(err)
+            throw err
+        }
         console.table(res);
         menu();
     });
@@ -16,6 +20,9 @@ const getAllDepts = () => {
 // display all roles
 const getAllRoles = () => {
     db.query(queries.allRoles, (err, res) => {
+        if (err) {
+            throw err
+        }
         console.table(res);
         menu();
     });
@@ -24,6 +31,9 @@ const getAllRoles = () => {
 // display all employees
 const getAllEmployees = () => {
     db.query(queries.allEmployees, (err, res) => {
+        if (err) {
+            throw err
+        }
         console.table(res);
         menu();
     });
