@@ -1,7 +1,7 @@
 # Employee-Tracker
 
 ## Description
-manage a company's employee database, using Node.js, Inquirer, and MySQL.
+manage a company's employee database, using Node.js, Inquirer, and MySQL. It allows the user to track employess, departemnts roles and salaries. 
 
 ## User Story 
 ![](lib/assets/ScreenShot.png)
